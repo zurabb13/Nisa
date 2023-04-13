@@ -1,0 +1,27 @@
+@import 'mixin';
+@import 'variables';
+
+h1 {
+  @include font('Lato', $cls-black, 72, 700);
+  line-height: 96%;
+}
+h2 {
+  @include font('Lato', $cls-black, 72, 700);
+  line-height: 86%;
+}
+h3 {
+  @include font('Lato', $cls-black, 56, 700);
+  line-height: 76%;
+}
+h4 {
+  @include font('Lato', $cls-black, 48, 700);
+  line-height: 64%;
+}
+h5 {
+  @include font('Lato', $cls-black, 40, 700);
+  line-height: 54%;
+}
+h5 {
+  @include font('Lato', $cls-black, 32, 700);
+  line-height: 44%;
+}
