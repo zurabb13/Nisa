@@ -1,0 +1,28 @@
+<div>
+  <a>
+    <img src="" alt="" class="logo" />
+    <span>Nisa</span>
+  </a>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <ul>
+      <li *ngFor="let item of link">
+        <button mat-menu-item>
+          <a [routerLink]="item.routerLink" [routerLinkActive]="item.active"
+            >{{ item.label }}
+          </a>
+        </button>
+      </li>
+      <li class="li">
+        <a>Login</a>
+        <button mat-raised-button color="warn">Buy Nesa</button>
+      </li>
+    </ul>
+  </mat-menu>
+</div>

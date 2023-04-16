@@ -1,0 +1,23 @@
+div {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    margin-right: 0;
+  }
+}
+
+::ng-deep.mat-mdc-menu-panel.mat-mdc-menu-panel {
+  margin: 0 auto !important;
+  min-width: 390px !important;
+  max-width: 390px !important;
+}
+.li {
+  display: flex;
+  padding-right: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+}
