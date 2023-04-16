@@ -1,11 +1,17 @@
+@import '../../../../assets/scss/link';
 div {
   width: 100%;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
   button {
     margin-right: 0;
+  }
+  span {
+    @include font('Loto', $cls-white, 22, 700);
+  }
+  a {
+    padding-left: 20px;
   }
 }
 
