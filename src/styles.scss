@@ -23,6 +23,10 @@ $nica: mat.define-light-theme(
 
 @include mat.all-component-themes($nica);
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 @import 'assets/scss/link';
 
 html,
