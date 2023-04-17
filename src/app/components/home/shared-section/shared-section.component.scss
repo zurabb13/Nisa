@@ -1,0 +1,31 @@
+.shared {
+  //padding: 64px 16px 10px 16px;
+  .about {
+    padding: 64px 16px 10px 16px;
+
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 16px;
+    }
+    a {
+      margin-top: 16px;
+    }
+  }
+  .card {
+    width: 100% !important;
+    background: #f9f5f2;
+    padding: 24px 0 27px 16px;
+  }
+  .swiper-slide {
+    width: 210px !important;
+  }
+}

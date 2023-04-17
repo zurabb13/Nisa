@@ -1,0 +1,18 @@
+.btn-primary {
+  width: 160px;
+  height: 48px;
+  background: #2241cf;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+  &:hover {
+    background: #132573;
+  }
+  &:focus {
+    background: #132573;
+  }
+}

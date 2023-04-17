@@ -1,0 +1,22 @@
+<div class="shared">
+  <div class="about">
+    <h3>Share the features that help your customers</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
+      consectetur egestas mauris adipiscing dui. Cursus facilisis diam turpis
+      leo netus consequat phasellus. Netus ipsum sed faucibus enim.
+    </p>
+    <a class="btn-primary">Explore Section</a>
+  </div>
+  <div class="swiper mySwiper card">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let cart of card">
+        <app-cart
+          [text]="cart.text"
+          [title]="cart.title"
+          [img]="cart.img"
+        ></app-cart>
+      </div>
+    </div>
+  </div>
+</div>
