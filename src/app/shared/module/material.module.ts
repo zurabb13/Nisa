@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 const UX = [
   MatMenuModule,
@@ -12,6 +13,7 @@ const UX = [
   MatExpansionModule,
   MatToolbarModule,
   MatButtonModule,
+  MatProgressBarModule,
 ];
 @NgModule({
   declarations: [],

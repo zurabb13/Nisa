@@ -10,6 +10,7 @@ import { SharedSectionComponent } from './shared-section/shared-section.componen
 import { register } from 'swiper/element/bundle';
 import { CartComponent } from './shared-section/cart/cart.component';
 import { DiscoverComponent } from './discover/discover.component';
+import { DiscoverSectionComponent } from './discover-section/discover-section.component';
 register();
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ register();
     SharedSectionComponent,
     CartComponent,
     DiscoverComponent,
+    DiscoverSectionComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, MaterialModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
