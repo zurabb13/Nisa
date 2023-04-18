@@ -1,0 +1,27 @@
+<div class="review">
+  <h3>
+    Customers love the ease <br />
+    and simplicity
+  </h3>
+  <div class="swiper mySwiper mt-5">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let rev of review">
+        <div class="rev-single">
+          <div class="flex items-center gap-3">
+            <img [src]="rev.img" alt="" />
+            <div class="flex flex-col">
+              <span class="mb-3">{{ rev.person }}</span>
+              <span>{{ rev.prof }}</span>
+            </div>
+          </div>
+          <p>{{ rev.text }}</p>
+          <span class="star"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="prev"><mat-icon>navigate_before</mat-icon></div>
+    <div class="next"><mat-icon>navigate_next</mat-icon></div>
+  </div>
+</div>

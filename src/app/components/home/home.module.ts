@@ -13,6 +13,7 @@ import { DiscoverComponent } from './discover/discover.component';
 import { DiscoverSectionComponent } from './discover-section/discover-section.component';
 import { PlayComponent } from './play/play.component';
 import { PlayerComponent } from './play/player/player.component';
+import { ReviewComponent } from './review/review.component';
 
 register();
 @NgModule({
@@ -26,6 +27,7 @@ register();
     DiscoverSectionComponent,
     PlayComponent,
     PlayerComponent,
+    ReviewComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, MaterialModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
