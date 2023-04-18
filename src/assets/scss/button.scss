@@ -15,4 +15,28 @@
   &:focus {
     background: #132573;
   }
+  &:active {
+    background: #132573;
+  }
+}
+.btn-pink {
+  width: 160px;
+  height: 48px;
+  background: #ff3c78;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+  &:hover {
+    background: #a21f49;
+  }
+  &:focus {
+    background: #a21f49;
+  }
+  &:active {
+    background: #a21f49;
+  }
 }
