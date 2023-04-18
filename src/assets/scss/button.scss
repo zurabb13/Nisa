@@ -40,3 +40,24 @@
     background: #a21f49;
   }
 }
+.btn-gray {
+  width: 160px;
+  height: 48px;
+  background: #f9f5f2;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+  &:hover {
+    background: #c0c0bd;
+  }
+  &:focus {
+    background: #c0c0bd;
+  }
+  &:active {
+    background: #c0c0bd;
+  }
+}
