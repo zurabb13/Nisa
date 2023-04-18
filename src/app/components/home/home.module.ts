@@ -11,6 +11,9 @@ import { register } from 'swiper/element/bundle';
 import { CartComponent } from './shared-section/cart/cart.component';
 import { DiscoverComponent } from './discover/discover.component';
 import { DiscoverSectionComponent } from './discover-section/discover-section.component';
+import { PlayComponent } from './play/play.component';
+import { PlayerComponent } from './play/player/player.component';
+
 register();
 @NgModule({
   declarations: [
@@ -21,6 +24,8 @@ register();
     CartComponent,
     DiscoverComponent,
     DiscoverSectionComponent,
+    PlayComponent,
+    PlayerComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, MaterialModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

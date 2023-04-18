@@ -1,0 +1,36 @@
+.play {
+  padding: 23px 19px 25px 16px;
+  position: relative;
+  .bg {
+    background-image: url('../../../../assets/img/trust.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 342px;
+    height: 186px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 113px;
+    padding-top: 30px;
+    h3 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      color: white;
+      text-align: center;
+    }
+  }
+  .video {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 242px;
+    height: 138px;
+  }
+  ul {
+    margin-top: 80px;
+    display: flex;
+    flex-flow: wrap row;
+    gap: 29px;
+  }
+}
