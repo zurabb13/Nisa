@@ -4,3 +4,8 @@
   font-size: $size + px;
   font-weight: $weight;
 }
+
+@mixin size($width, $height) {
+  width: $width + px;
+  height: $height + px;
+}

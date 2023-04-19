@@ -1,13 +1,17 @@
+@import '../../../../assets/scss/link';
 .header {
   margin: 0 auto;
+  padding: 0 0 40px 0;
   h1 {
     font-size: 32px;
   }
   p {
-    color: white;
+    color: $cls-white;
     margin-bottom: 18px;
+    margin-top: 16px;
+    line-height: 18px;
   }
-  button {
+  a {
     margin-bottom: 52px;
     mat-icon {
       order: 2;
@@ -18,11 +22,12 @@
   }
   .relative {
     .info-cart {
-      width: 100px;
-      height: 97px;
+      @include size(100, 97);
+      //width: 100px;
+      //height: 97px;
       bottom: 0;
       right: 9%;
-      background: white;
+      background: $cls-white;
       border-radius: 10px;
     }
     .text {
@@ -30,36 +35,93 @@
       font-weight: 500;
     }
     .circle1 {
+      @include size(70, 5);
       margin-top: 7px;
-      width: 70px;
-      height: 5px;
+      //width: 70px;
+      //height: 5px;
       border-radius: 4px;
-      background: #e1e0de;
+      background: $cls-whitesmoke;
     }
     .circle2 {
+      @include size(57, 3);
       margin-top: 4px;
-      width: 57px;
-      height: 3px;
+      //width: 57px;
+      //height: 3px;
       border-radius: 3px;
-      background: #e1e0de;
+      background: $cls-whitesmoke;
     }
     .circle3 {
+      @include size(78, 17);
       margin-top: 9.3px;
-      width: 78px;
-      height: 17px;
+      //width: 78px;
+      //height: 17px;
       border-radius: 35px;
-      background: #ff3c78;
+      background: $cls-pink;
     }
     .circle4 {
-      width: 18px;
-      height: 18px;
+      @include size(18, 18);
+      //width: 18px;
+      //height: 18px;
       border-radius: 50%;
-      background: #ff3c78;
+      background: $cls-pink;
       position: absolute;
       top: -10px;
       right: 0;
       left: 0;
       margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .header {
+    max-width: 930px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 40px;
+
+    .div {
+      max-width: 490px;
+      h1 {
+        font-size: 56px;
+      }
+      p {
+        margin-top: 40px;
+        line-height: 26px;
+      }
+      button {
+        margin-top: 36px;
+      }
+    }
+    .relative {
+      @include size(478, 474);
+      img {
+        width: 100%;
+      }
+      .info-cart {
+        @include size(248, 236);
+        .text {
+          font-size: 48px;
+        }
+        .circle1 {
+          @include size(173, 7px);
+          margin-top: 16px;
+        }
+        .circle2 {
+          @include size(142, 7);
+          margin-top: 13px;
+        }
+        .circle3 {
+          @include size(173, 42);
+          margin-top: 33px;
+        }
+        .circle4 {
+          @include size(45, 45);
+          top: -21px;
+        }
+      }
     }
   }
 }
