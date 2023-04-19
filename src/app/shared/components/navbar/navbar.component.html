@@ -1,28 +1,46 @@
 <div class="bg-black">
-  <a class="flex items-center gap-2">
-    <img src="assets/img/Logo.png" alt="logo" class="logo" />
-    <span>Nisa</span>
-  </a>
-  <button
-    mat-icon-button
-    [matMenuTriggerFor]="menu"
-    aria-label="Example icon-button with a menu"
-  >
-    <mat-icon color="warn">menu</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <ul>
-      <li *ngFor="let item of link">
-        <button mat-menu-item>
-          <a [routerLink]="item.routerLink" [routerLinkActive]="item.active"
-            >{{ item.label }}
+  <div class="web">
+    <a class="flex items-center gap-2">
+      <img src="assets/img/Logo.png" alt="logo" class="logo" />
+      <span>Nisa</span>
+    </a>
+    <nav class="nav">
+      <ul>
+        <li *ngFor="let nav of link">
+          <a [routerLink]="nav.routerLink" [routerLinkActive]="nav.active"
+            >{{ nav.label }}
           </a>
-        </button>
-      </li>
-      <li class="li">
-        <a>Login</a>
-        <button mat-raised-button color="warn">Buy Nesa</button>
-      </li>
-    </ul>
-  </mat-menu>
+        </li>
+        <li class="login">
+          <a routerLink="">Login</a>
+        </li>
+        <li class="buy">
+          <a class="btn-pink" routerLink="">Buy Nesa</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="btn"
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon color="warn">menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <ul>
+        <li *ngFor="let item of link">
+          <button mat-menu-item>
+            <a [routerLink]="item.routerLink" [routerLinkActive]="item.active"
+              >{{ item.label }}
+            </a>
+          </button>
+        </li>
+        <li class="li">
+          <a>Login</a>
+          <button mat-raised-button color="warn">Buy Nesa</button>
+        </li>
+      </ul>
+    </mat-menu>
+  </div>
 </div>
