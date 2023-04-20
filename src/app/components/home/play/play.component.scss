@@ -1,3 +1,4 @@
+@import '../../../../assets/scss/link';
 .play {
   padding: 23px 19px 25px 16px;
   position: relative;
@@ -21,16 +22,39 @@
   }
   .video {
     position: absolute;
-    bottom: 0;
+    bottom: -47%;
     left: 50%;
     transform: translate(-50%, -100%);
     width: 242px;
     height: 138px;
   }
   ul {
-    margin-top: 80px;
+    margin-top: 280px;
     display: flex;
     flex-flow: wrap row;
     gap: 29px;
+  }
+}
+@media screen and (min-width: 790px) {
+  .play {
+    .bg {
+      background-image: url('../../../../assets/img/trust-bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: black;
+      width: 100% !important;
+      height: 420px !important;
+      h3 {
+        @include font-size(40, 700, 47);
+        margin-top: 62px;
+      }
+    }
+    .video {
+      @include size(792, 454);
+    }
+    ul {
+      justify-content: center;
+      gap: 66px;
+    }
   }
 }
