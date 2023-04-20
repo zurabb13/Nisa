@@ -9,3 +9,9 @@
   width: $width + px;
   height: $height + px;
 }
+
+@mixin font-size($size, $weight, $height) {
+  font-size: $size + px;
+  font-weight: $weight;
+  line-height: $height + px;
+}
