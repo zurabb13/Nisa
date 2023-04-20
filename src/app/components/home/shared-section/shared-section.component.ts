@@ -1,11 +1,11 @@
-import { AfterViewInit, Component } from '@angular/core';
-import Swiper from 'swiper';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-shared-section',
   templateUrl: './shared-section.component.html',
   styleUrls: ['./shared-section.component.scss'],
 })
-export class SharedSectionComponent implements AfterViewInit {
+export class SharedSectionComponent {
+  @ViewChild('swiperContainer') swiperContainer!: ElementRef;
   card = [
     {
       title: 'Blog',
@@ -28,11 +28,4 @@ export class SharedSectionComponent implements AfterViewInit {
       img: 'assets/img/cart-4.svg',
     },
   ];
-  ngAfterViewInit() {
-    const swiper = new Swiper('.mySwiper', {
-      loop: true,
-      slidesPerView: 2,
-      spaceBetween: 30,
-    });
-  }
 }

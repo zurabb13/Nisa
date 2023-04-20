@@ -5,6 +5,7 @@ div {
   gap: 16px;
   border-radius: 16px;
   background: white;
+  margin-top: 20px;
   h5 {
     font-style: normal;
     font-weight: 700;
@@ -27,5 +28,10 @@ div {
     img {
       align-self: flex-start;
     }
+  }
+}
+@media screen and (min-width: 790px) {
+  div {
+    margin: 0;
   }
 }

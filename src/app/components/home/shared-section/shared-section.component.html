@@ -8,9 +8,9 @@
     </p>
     <a class="btn-primary">Explore Section</a>
   </div>
-  <div class="swiper mySwiper card">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" *ngFor="let cart of card">
+  <div class="card">
+    <div class="wrapper">
+      <div *ngFor="let cart of card">
         <app-cart
           [text]="cart.text"
           [title]="cart.title"
