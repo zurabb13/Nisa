@@ -1,4 +1,8 @@
+@import '../../../../assets/scss/link';
 .review {
+  background-image: url('../../../../assets/img/review-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
   background: #f9f5f2;
   padding: 24px 16px;
   h3 {
@@ -8,8 +12,9 @@
   }
 }
 .rev-single {
-  width: 320px;
-  height: 330px;
+  @include size(320, 330);
+  //width: 320px;
+  //height: 330px;
   background: #ffffff;
   border-radius: 16px;
   padding: 32px;
@@ -25,8 +30,7 @@
   width: 200px;
   margin: 30px auto;
   div {
-    width: 48px;
-    height: 48px;
+    @include size(48, 48);
     border-radius: 50%;
     background: black;
     display: flex;
@@ -46,5 +50,20 @@
   }
   .prev {
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .review {
+    //background-position: center;
+    h3 {
+      @include font-size(40, 700, 47);
+    }
+    .swiper {
+      margin-top: 62px;
+      display: flex;
+      justify-content: center;
+      padding-left: 80px;
+    }
   }
 }

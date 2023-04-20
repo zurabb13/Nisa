@@ -38,7 +38,12 @@ export class ReviewComponent implements AfterViewInit {
     const swiper = new Swiper('.mySwiper', {
       slidesPerView: 1,
       loop: false,
-
+      breakpoints: {
+        790: {
+          slidesPerView: 3,
+          loop: true,
+        },
+      },
       navigation: {
         nextEl: '.next',
         prevEl: '.prev',
