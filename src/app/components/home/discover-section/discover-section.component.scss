@@ -1,4 +1,4 @@
-@import '../../../../assets/scss/link';
+//@import '../../../../assets/scss/link';
 .discoverSection {
   padding: 24px 16px;
   .details {
@@ -17,7 +17,9 @@
   }
   .about {
     margin-top: 72px;
-    @include size(343, 386);
+    //@include size(343, 386);
+    width: 343px;
+    height: 386px;
     background: #f9f5f2;
     border-radius: 16px;
     padding: 21px 19px;
@@ -28,8 +30,10 @@
     }
     .det {
       position: absolute;
-      @include size(280, 248);
-      background: $cls-white;
+      //@include size(280, 248);
+      width: 280px;
+      height: 248px;
+      background: white;
       border-radius: 16px;
       bottom: 0;
       left: 50%;
@@ -37,7 +41,10 @@
       padding: 14px 40px 22px 34px;
       h3 {
         font-style: normal;
-        @include font-size(32, 700, 43);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 43px;
+        //@include font-size(32, 700, 43);
       }
       .balance {
         margin-top: 6px;
@@ -68,10 +75,10 @@
     }
   }
 }
-::ng-deep.mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
+:host::ng-deep.mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
   background-color: rgb(14 14 16 / 25%);
 }
-::ng-deep.mdc-linear-progress__bar-inner {
+:host::ng-deep.mdc-linear-progress__bar-inner {
   border-color: #000000 !important;
 }
 @media screen and (min-width: 790px) {
@@ -82,10 +89,10 @@
     .details {
       width: 448px;
       h4 {
-        @include font-size(40, 700, 47);
+        //@include font-size(40, 700, 47);
       }
       p {
-        @include font-size(16, 400, 24);
+        //@include font-size(16, 400, 24);
         margin-top: 24px;
       }
     }
