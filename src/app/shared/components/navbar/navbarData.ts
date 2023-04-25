@@ -29,9 +29,4 @@ export const navbarData = [
     label: 'Blog',
     active: 'active',
   },
-  {
-    routerLink: '/login',
-    label: 'Login',
-    active: 'active',
-  },
 ];

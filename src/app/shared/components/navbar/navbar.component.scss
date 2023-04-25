@@ -27,3 +27,66 @@ div {
   align-items: center;
   gap: 32px;
 }
+nav {
+  display: none;
+}
+.nav {
+  ul {
+    li {
+      a {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: #ff3c78;
+        }
+      }
+      &:last-child {
+        a {
+          color: white !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .web {
+    max-width: 1440px;
+    height: 94px;
+    display: flex;
+    justify-content: center;
+    .btn {
+      display: none;
+    }
+    .nav {
+      width: 930px;
+      display: block !important;
+      color: white;
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 30px;
+
+        li {
+          //display: flex;
+          color: white;
+          padding: 0 20px;
+          a {
+            padding: 0;
+          }
+
+          .btn-pink {
+            height: 48px;
+            padding-left: 0 !important;
+          }
+        }
+      }
+    }
+    .login {
+      margin-left: auto;
+    }
+    .buy {
+    }
+  }
+}
