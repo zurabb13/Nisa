@@ -4,11 +4,13 @@
     Take a look at the <br />
     lastest aricles
   </h3>
-  <div *ngFor="let blog of blogs" class="about">
-    <div class="singleBlog">
-      <img [src]="blog.img" alt="" />
-      <p>{{ blog.data }}</p>
-      <h6>{{ blog.text }}</h6>
+  <div class="flex flex-col justify-center">
+    <div *ngFor="let blog of blogs" class="about">
+      <div class="singleBlog">
+        <img [src]="blog.img" alt="" />
+        <p>{{ blog.data }}</p>
+        <h6>{{ blog.text }}</h6>
+      </div>
     </div>
   </div>
 </div>
