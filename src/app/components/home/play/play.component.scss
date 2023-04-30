@@ -22,7 +22,7 @@
   }
   .video {
     position: absolute;
-    bottom: -47%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
     width: 242px;
@@ -51,6 +51,7 @@
     }
     .video {
       @include size(792, 454);
+      top: 88%;
     }
     ul {
       justify-content: center;
