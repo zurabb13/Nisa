@@ -20,6 +20,13 @@ const routes: Routes = [
             (home) => home.HomeModule
           ),
       },
+      {
+        path: 'about',
+        loadChildren: () =>
+          import('../../components/about/about.module').then(
+            (about) => about.AboutModule
+          ),
+      },
     ],
   },
 ];

@@ -1,0 +1,11 @@
+@import '../../../../assets/scss/link';
+.about {
+  a {
+    @include font-size(16, 500, 24);
+  }
+  h2 {
+    width: 280px;
+    margin-top: 24px;
+    @include font-size(24, 700, 32);
+  }
+}
