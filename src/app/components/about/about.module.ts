@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { register } from 'swiper/element/bundle';
 import { ClientDetailsComponent } from './client-details/client-details.component';
 import { MaterialModule } from '../../shared/module/material.module';
+import { MemberComponent } from './member/member.component';
 
 register();
 
@@ -18,6 +19,7 @@ register();
     SubtitleComponent,
     MeetSectionComponent,
     ClientDetailsComponent,
+    MemberComponent,
   ],
   imports: [CommonModule, AboutRoutingModule, HttpClientModule, MaterialModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

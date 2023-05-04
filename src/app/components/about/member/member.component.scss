@@ -1,0 +1,54 @@
+.person {
+  background: #1e1e1e;
+  width: 100%;
+  padding: 24px;
+  color: white;
+  .link {
+    background-color: #2241cf;
+    color: white;
+    &:hover {
+      background-color: #182f9d;
+    }
+  }
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: white;
+  }
+  .team {
+    div {
+      position: relative;
+      width: 326px;
+      height: 530px;
+      .clients {
+        width: 100%;
+        height: 364px;
+        object-fit: cover;
+      }
+      .name {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .details {
+        filter: grayscale(1) brightness(2);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          filter: grayscale(1) brightness(0);
+        }
+      }
+      .moderator {
+        position: absolute;
+        top: 55%;
+        left: 8%;
+        border-radius: 16px;
+      }
+    }
+  }
+}
