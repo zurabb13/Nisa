@@ -6,10 +6,11 @@
   </h3>
   <div class="flex flex-col justify-center">
     <div *ngFor="let blog of blogs" class="about">
-      <div class="singleBlog">
+      <div class="singleBlog relative">
         <img [src]="blog.img" alt="" />
         <p>{{ blog.data }}</p>
         <h6>{{ blog.text }}</h6>
+        <a class="link btn-black">{{ blog.stories | uppercase }}</a>
       </div>
     </div>
   </div>

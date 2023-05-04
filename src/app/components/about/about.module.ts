@@ -10,6 +10,7 @@ import { register } from 'swiper/element/bundle';
 import { ClientDetailsComponent } from './client-details/client-details.component';
 import { MaterialModule } from '../../shared/module/material.module';
 import { MemberComponent } from './member/member.component';
+import { BlogComponent } from '../home/blog/blog.component';
 
 register();
 
@@ -21,7 +22,13 @@ register();
     ClientDetailsComponent,
     MemberComponent,
   ],
-  imports: [CommonModule, AboutRoutingModule, HttpClientModule, MaterialModule],
+  imports: [
+    CommonModule,
+    AboutRoutingModule,
+    HttpClientModule,
+    MaterialModule,
+    BlogComponent,
+  ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AboutModule {}

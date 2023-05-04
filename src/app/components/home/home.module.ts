@@ -29,9 +29,8 @@ register();
     PlayComponent,
     PlayerComponent,
     ReviewComponent,
-    BlogComponent,
   ],
-  imports: [CommonModule, HomeRoutingModule, MaterialModule],
+  imports: [CommonModule, HomeRoutingModule, MaterialModule, BlogComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeModule {}

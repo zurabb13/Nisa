@@ -90,3 +90,15 @@
     background: #fac2a5;
   }
 }
+.btn-black {
+  background: #050404;
+  border-radius: 16px;
+  color: $cls-white !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 11px 15px;
+}
