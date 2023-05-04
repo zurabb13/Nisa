@@ -1,0 +1,31 @@
+<div class="testimonial">
+  <a href="/about" class="btn-tan">Testimonial</a>
+  <h2>What our client says</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide pb-6" *ngFor="let client of clients">
+        <div
+          class="client flex flex-col items-center justify-center text-center gap-3 mt-3 m-auto"
+        >
+          <h4>{{ client.title }}</h4>
+          <p>{{ client.text }}</p>
+          <div class="img">
+            <img [src]="client.image" [alt]="client.title" />
+          </div>
+          <span class="name">{{ client.name }}</span>
+          <span class="position">{{ client.position }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="navigation flex flex-row justify-center text-center items-center gap-3"
+  >
+    <div class="prev flex justify-center text-center items-center">
+      <mat-icon>navigate_before</mat-icon>
+    </div>
+    <div class="next flex justify-center text-center items-center">
+      <mat-icon>navigate_next</mat-icon>
+    </div>
+  </div>
+</div>

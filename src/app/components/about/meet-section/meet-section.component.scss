@@ -1,0 +1,30 @@
+.div {
+  width: 272px;
+  height: 302px;
+  margin: 0 auto;
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.details {
+  .about {
+    width: 89px;
+    height: 88px;
+    span {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      font-variant: small-caps;
+    }
+  }
+}

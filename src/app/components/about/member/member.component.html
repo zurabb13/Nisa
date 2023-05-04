@@ -1,0 +1,30 @@
+<div class="person flex justify-center flex-col items-center">
+  <a href="/about" class="btn-tan link">Our team</a>
+  <h2 class="mt-2">People with all the skills you need are in Nisa!</h2>
+  <section class="team flex flex-row flex-wrap justify-center gap-3">
+    <div
+      class="members flex flex-col justify-center text-center items-center"
+      *ngFor="let member of members"
+    >
+      <img class="clients" [src]="member.img" alt="" />
+      <span class="name mt-3">{{ member.name }}</span>
+      <p class="mt-1">{{ member.about }}</p>
+      <span class="social mt-3">{{ member.social }}</span>
+      <ul class="flex justify-center gap-3 items-center mt-3">
+        <li
+          class="flex flex-row justify-center gap-3"
+          *ngFor="let icon of icons"
+        >
+          <a [href]="[icon.link]" class="details">
+            <img class="icon" [src]="icon.icon" alt="" />
+          </a>
+        </li>
+      </ul>
+      <span
+        class="btn-tan moderator"
+        [ngStyle]="{ background: member.color, color: 'white' }"
+        >{{ member.position }}</span
+      >
+    </div>
+  </section>
+</div>
