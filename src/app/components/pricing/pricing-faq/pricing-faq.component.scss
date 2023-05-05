@@ -1,0 +1,12 @@
+.mat-accordion .mat-expansion-panel{
+  margin-bottom:10px;
+}
+.mat-expansion-panel{
+  background: #F9F5F2;
+}
+mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
+  background: #F9F5F2;
+}
+.faq{
+  text-align: -webkit-center;
+}

@@ -18,6 +18,7 @@ const UX = [
   MatProgressBarModule,
   MatFormFieldModule,
   MatInputModule,
+  MatExpansionModule,
 ];
 @NgModule({
   declarations: [],

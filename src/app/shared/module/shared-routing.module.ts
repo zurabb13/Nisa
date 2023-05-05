@@ -34,6 +34,13 @@ const routes: Routes = [
             (contact) => contact.ContactModule
           ),
       },
+      {
+        path: 'pricing',
+        loadChildren: () =>
+          import('../../components/pricing/pricing.module').then(
+            (pricing) => pricing.PricingModule
+          ),
+      },
     ],
   },
 ];

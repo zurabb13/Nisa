@@ -1,0 +1,16 @@
+.section{
+  width: 296px;
+  height: 560px;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 7px rgba(109, 109, 109, 0.1);
+  ul{
+    margin: 30px 0;
+    li{
+      display: flex;
+      justify-content:flex-start;
+      gap: 10px;
+      flex-direction: row;
+    }
+  }
+}
