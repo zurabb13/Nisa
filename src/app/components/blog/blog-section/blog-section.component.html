@@ -1,0 +1,20 @@
+<div class="div my-5">
+  <span class="btn-gray text-black my-5">BLOG & ARTICLE</span>
+  <h3 class="text-black">Our latest articles</h3>
+  <div class="flex justify-center items-center flex-row gap-6 flex-wrap px-8 my-4">
+    <button [ngClass]="{'active': active === 'stories'}" (click)="filterData('stories')">{{'stories' | uppercase}}</button>
+    <button [ngClass]="{'active': active === 'technology'}" (click)="filterData('technology')">{{'technology' | uppercase}}</button>
+    <button [ngClass]="{'active': active ==='design'}" (click)="filterData('design')">{{'design'| uppercase}}</button>
+    </div>
+    <div class="flex flex-col justify-center gap-5">
+    <div *ngFor="let blog of filterPost" class="blog">
+        <div class="details relative">
+          <img [src]="blog.img" alt="" />
+          <p>{{ blog.data }}</p>
+          <h6>{{ blog.text }}</h6>
+          <a class="link btn-black">{{ blog.stories | uppercase }}</a>
+      </div>
+    </div>
+  </div>
+  <app-blog></app-blog>
+</div>
