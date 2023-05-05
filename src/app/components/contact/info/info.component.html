@@ -1,0 +1,39 @@
+<div class="flex justify-center flex-row flex-wrap gap-8 bg-black text-white p-4">
+  <section>
+    <div>
+    <h3 class="text-white text-2xl">Get in touch with our team today.</h3>
+    <p class="text-sm mt-4">Have questions? Let’s Chat! Fill out the form below and one of our team members will reach out as soon as possible.</p>
+    </div>
+    <div class="flex flex-col justify-center gap-3 mt-5 comp">
+      <h3 class="text-white text-2xl">Company Details</h3>
+      <ul class="flex flex-col gap-6 mt-4">
+        <li class="flex flex-row justify-start gap-5 items-center " *ngFor="let info of details">
+          <img [src]="info.img" alt="">
+          <span>{{info.text}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="social mt-5">
+      <ul class="flex gap-4 grayscale brightness-200">
+        <li *ngFor="let social of social">
+          <a [href]="[social.link]">
+            <img class='w-5 h-5' [src]="social.img" [alt]="social.link"></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="bg-white w-screen p-4 rounded-3xl">
+    <div>
+      <h3 class="text-2xl text-center mb-5">Get in touch with us</h3>
+      <app-form [field]="'First name'"></app-form>
+      <app-form [field]="'Last name'"></app-form>
+      <app-form [field]="'Work email'"></app-form>
+      <app-form [field]="'Phone number'"></app-form>
+      <mat-form-field class="mt-8" appearance="outline">
+        <mat-label>Textarea</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary" style="background: #2241CF">Submit</button>
+    </div>
+  </section>
+</div>

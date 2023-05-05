@@ -27,6 +27,13 @@ const routes: Routes = [
             (about) => about.AboutModule
           ),
       },
+      {
+        path: 'contact',
+        loadChildren: () =>
+          import('../../components/contact/contact.module').then(
+            (contact) => contact.ContactModule
+          ),
+      },
     ],
   },
 ];

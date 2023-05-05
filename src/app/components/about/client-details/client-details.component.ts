@@ -2,12 +2,15 @@ import {
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
-  OnInit,
 } from '@angular/core';
 import Swiper from 'swiper';
+import { CommonModule } from '@angular/common';
+import { MaterialModule } from '../../../shared/module/material.module';
 
 @Component({
   selector: 'app-client-details',
+  standalone: true,
+  imports: [CommonModule, MaterialModule],
   templateUrl: './client-details.component.html',
   styleUrls: ['./client-details.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

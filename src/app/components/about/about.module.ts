@@ -19,7 +19,6 @@ register();
     AboutComponent,
     SubtitleComponent,
     MeetSectionComponent,
-    ClientDetailsComponent,
     MemberComponent,
   ],
   imports: [
@@ -28,6 +27,7 @@ register();
     HttpClientModule,
     MaterialModule,
     BlogComponent,
+    ClientDetailsComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
