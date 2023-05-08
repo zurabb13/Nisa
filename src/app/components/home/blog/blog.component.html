@@ -7,7 +7,7 @@
   <div class="flex flex-col justify-center">
     <div *ngFor="let blog of blog" class="about">
       <div class="singleBlog relative pt-6">
-        <a (click)="navigate(blog.id)">
+        <a [routerLink]="blog.id" (click)="navigate(blog.id)">
           <img [src]="blog.img" alt="" />
           <p>{{ blog.data }}</p>
           <h6>{{ blog.text }}</h6>

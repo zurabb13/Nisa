@@ -16,3 +16,24 @@
     filter: brightness(0.1) grayscale(1);
   }
 }
+
+@media screen and (min-width: 790px) {
+  .cms {
+    width: 990px;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    .users {
+    }
+    .modern {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 20px;
+      .single {
+      }
+      .details {
+        width: 634px;
+      }
+    }
+  }
+}

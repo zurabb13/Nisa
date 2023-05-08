@@ -1,5 +1,9 @@
 <div class="flex flex-col p-4 gap-6 cms">
-  <a (click)="back()" class="btn-pink font-black flex flex-row gap-5 link">
+  <a
+    [routerLink]="['/blog']"
+    (click)="back()"
+    class="btn-pink font-black flex flex-row gap-5 link"
+  >
     <svg
       width="24"
       height="25"
@@ -23,37 +27,39 @@
       /></svg
     >{{ 'blog' | uppercase }}</a
   >
-  <div *ngIf="user">
+  <div *ngIf="user" class="users">
     <div class="flex flex-col justify-center gap-5">
       <h2 class="text-2xl text-black">{{ user.header }}</h2>
       <p class="text-sm">{{ user.text }}</p>
       <img [src]="user.img" alt="" />
     </div>
-    <div
-      *ngFor="let users of user.user"
-      class="single flex flex-col justify-center items-center text-center gap-5 mt-5 m-auto"
-    >
-      <img [src]="users.img" alt="" />
-      <h5>{{ users.name }}</h5>
-      <span>{{ users.title }}</span>
-      <p>{{ users.text }}</p>
-      <ul class="flex items-center justify-center gap-3">
-        <li
-          *ngFor="let socials of users.social"
-          class="flex flex-row justify-center"
-        >
-          <a class="icons" [href]="[socials.link]">
-            <img [src]="socials.icon" alt="" />
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="flex flex-col gap-5 mt-5">
-      <span class="text-base">{{ user.data }}</span>
-      <h4 class="text-2xl">{{ user.body }}</h4>
-      <p class="text-sm">{{ user.bodyText }}</p>
-      <h4 class="text-2xl text-black">{{ user.body }}</h4>
-      <p class="text-sm">{{ user.storyText2 }}</p>
+    <div class="modern">
+      <div
+        *ngFor="let users of user.user"
+        class="single flex flex-col justify-center items-center text-center gap-5 mt-5 m-auto"
+      >
+        <img [src]="users.img" alt="" />
+        <h5>{{ users.name }}</h5>
+        <span>{{ users.title }}</span>
+        <p>{{ users.text }}</p>
+        <ul class="flex items-center justify-center gap-3">
+          <li
+            *ngFor="let socials of users.social"
+            class="flex flex-row justify-center"
+          >
+            <a class="icons" [href]="[socials.link]">
+              <img [src]="socials.icon" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-5 mt-5 details">
+        <span class="text-base">{{ user.data }}</span>
+        <h4 class="text-2xl">{{ user.body }}</h4>
+        <p class="text-sm">{{ user.bodyText }}</p>
+        <h4 class="text-2xl text-black">{{ user.body }}</h4>
+        <p class="text-sm">{{ user.storyText2 }}</p>
+      </div>
     </div>
   </div>
   <app-blog></app-blog>
