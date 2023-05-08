@@ -16,7 +16,6 @@ export class BlogSectionComponent implements OnInit {
     this._service.getBlog().subscribe((res) => {
       this.blog = res;
       this.filterData('stories');
-      console.log(this.blog, res);
     });
   }
   filterData(data: string) {
@@ -30,7 +29,6 @@ export class BlogSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllData();
-    console.log(this.blog, this.filterPost);
   }
   navigate(id: number) {
     this._route.navigate(['blog', id]);

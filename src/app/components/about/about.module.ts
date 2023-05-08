@@ -11,6 +11,7 @@ import { ClientDetailsComponent } from './client-details/client-details.componen
 import { MaterialModule } from '../../shared/module/material.module';
 import { MemberComponent } from './member/member.component';
 import { BlogComponent } from '../home/blog/blog.component';
+import { BlogService } from '../../shared/service/blog.service';
 
 register();
 
@@ -29,6 +30,7 @@ register();
     BlogComponent,
     ClientDetailsComponent,
   ],
+  providers: [BlogService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AboutModule {}

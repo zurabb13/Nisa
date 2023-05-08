@@ -15,6 +15,8 @@ import { PlayComponent } from './play/play.component';
 import { PlayerComponent } from './play/player/player.component';
 import { ReviewComponent } from './review/review.component';
 import { BlogComponent } from './blog/blog.component';
+import { BlogService } from '../../shared/service/blog.service';
+import { HttpClientModule } from '@angular/common/http';
 
 register();
 @NgModule({
@@ -30,7 +32,14 @@ register();
     PlayerComponent,
     ReviewComponent,
   ],
-  imports: [CommonModule, HomeRoutingModule, MaterialModule, BlogComponent],
+  imports: [
+    CommonModule,
+    HomeRoutingModule,
+    MaterialModule,
+    BlogComponent,
+    HttpClientModule,
+  ],
+  providers: [BlogService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeModule {}
