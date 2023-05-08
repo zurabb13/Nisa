@@ -1,12 +1,16 @@
-.mat-accordion .mat-expansion-panel{
-  margin-bottom:10px;
+.mat-accordion .mat-expansion-panel {
+  margin-bottom: 10px;
+  max-width: 970px;
 }
-.mat-expansion-panel{
-  background: #F9F5F2;
+.mat-expansion-panel {
+  background: #f9f5f2;
 }
-mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
-  background: #F9F5F2;
+mat-expansion-panel:not(.mat-expanded):not([aria-disabled='true'])
+  .mat-expansion-panel-header:hover {
+  background: #f9f5f2;
 }
-.faq{
+.faq {
   text-align: -webkit-center;
+}
+@media screen and (min-width: 790px) {
 }
