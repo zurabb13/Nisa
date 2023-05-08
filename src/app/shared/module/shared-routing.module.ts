@@ -41,6 +41,13 @@ const routes: Routes = [
             (pricing) => pricing.PricingModule
           ),
       },
+      {
+        path: 'blog',
+        loadChildren: () =>
+          import('../../components/blog/blog.module').then(
+            (blog) => blog.BlogModule
+          ),
+      },
     ],
   },
 ];

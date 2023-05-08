@@ -1,0 +1,18 @@
+.cms {
+  .link {
+    width: 134px;
+    border: 1px solid #ff3c78;
+    background: transparent;
+    color: #ff3c78;
+    font-size: 18px;
+  }
+  .single {
+    width: 241px;
+    height: 246px;
+    box-shadow: 0 4px 12px rgba(191, 191, 191, 0.2);
+    border-radius: 16px;
+  }
+  .icons {
+    filter: brightness(0.1) grayscale(1);
+  }
+}

@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MaterialModule } from '../../module/material.module';
 import { navbarData } from './navbarData';
 
 @Component({

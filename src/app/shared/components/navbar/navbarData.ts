@@ -20,13 +20,8 @@ export const navbarData = [
     active: 'active',
   },
   {
-    routerLink: '/Contact',
+    routerLink: '/contact',
     label: 'Contact',
-    active: 'active',
-  },
-  {
-    routerLink: '/blog ',
-    label: 'Blog',
     active: 'active',
   },
 ];

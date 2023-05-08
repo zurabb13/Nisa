@@ -1,56 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { BlogService } from '../../../shared/service/blog.service';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
+  providers: [BlogService],
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss'],
 })
-export class BlogComponent {
-  blogs = [
-    {
-      img: 'assets/img/blog/image-1.png',
-      data: 'May 5. 2022 | 4 MIN READ',
-      text: 'How marketing can help your business more than anything.',
-      stories: 'stories',
-      link: '',
-    },
-    {
-      img: 'assets/img/blog/image-2.png',
-      data: 'May 5. 2022 | 4 MIN READ',
-      text: 'How marketing can help your business more than anything.',
-      stories: 'stories',
-      link: '',
-    },
-    {
-      img: 'assets/img/blog/image-3.png',
-      data: 'May 5. 2022 | 4 MIN READ',
-      text: 'How marketing can help your business more than anything.',
-      stories: 'stories',
-      link: '',
-    },
-    {
-      img: 'assets/img/blog/image-4.png',
-      data: 'May 5. 2022 | 4 MIN READ',
-      text: 'How marketing can help your business more than anything.',
-      stories: 'stories',
-      link: '',
-    },
-    {
-      img: 'assets/img/blog/image-5.png',
-      data: 'May 5. 2022 | 4 MIN READ',
-      text: 'How marketing can help your business more than anything.',
-      stories: 'stories',
-      link: '',
-    },
-    {
-      img: 'assets/img/blog/image-6.png',
-      data: 'May 5. 2022 | 4 MIN READ',
-      text: 'How marketing can help your business more than anything.',
-      stories: 'stories',
-      link: '',
-    },
-  ];
+export class BlogComponent implements OnInit {
+  blog: any;
+  getAllData() {
+    this._service.getBlog().subscribe((res) => {
+      this.blog = res;
+    });
+  }
+  constructor(
+    private _service: BlogService,
+    private _route: ActivatedRoute,
+    private _router: Router
+  ) {
+    this.getAllData();
+  }
+  ngOnInit() {}
+  navigate(id: number) {
+    const url = window.location.href;
+    window.scrollTo(0, 0);
+    this._router.navigate(url === 'blog' ? [id] : ['blog', id]);
+  }
 }
