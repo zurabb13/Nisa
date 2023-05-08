@@ -23,10 +23,10 @@
       {{ 'design' | uppercase }}
     </button>
   </div>
-  <div class="flex flex-col justify-center gap-5">
+  <div class="flex flex-col justify-center gap-5 section">
     <div *ngFor="let blog of filterPost" class="blog">
       <div class="details relative">
-        <a (click)="navigate(blog.id)">
+        <a [routerLink]="[blog.id]" (click)="navigate(blog.id)" title="title">
           <img [src]="blog.img" alt="" />
           <p>{{ blog.data }}</p>
           <h6>{{ blog.text }}</h6>
