@@ -95,3 +95,43 @@
     }
   }
 }
+
+@media screen and (min-width: 790px) {
+  .testimonial {
+    .client {
+      width: 337px;
+      height: 384px;
+      gap: 5px;
+      &:before {
+        top: -69px;
+        left: -93px;
+        width: 185px;
+        height: 170px;
+      }
+      &:after {
+        font-size: 100px;
+        top: 22px;
+        left: 25px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 293px;
+      }
+      .img {
+        margin-top: 32px;
+        width: 64px;
+        height: 64px;
+      }
+      .name {
+        font-size: 16px;
+      }
+      .position {
+        font-size: 14px;
+      }
+    }
+  }
+}

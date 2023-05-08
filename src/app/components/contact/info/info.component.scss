@@ -1,10 +1,15 @@
-.comp{
+.comp {
   border-top: 1px dashed whitesmoke;
   border-bottom: 1px dashed whitesmoke;
   padding: 32px 0;
 }
 
-
-.mat-mdc-form-field{
+.mat-mdc-form-field {
   width: 100%;
+}
+@media screen and (min-width: 790px) {
+  section {
+    width: 382px;
+    margin-top: 50px;
+  }
 }
