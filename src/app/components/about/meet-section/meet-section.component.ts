@@ -37,8 +37,22 @@ export class MeetSectionComponent implements OnInit, AfterViewInit {
   ];
   ngAfterViewInit() {
     let swiper = new Swiper('.mySwiper', {
-      loop: true,
-      // slidesPerView: 1,
+      // loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        790: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        900: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
     });
   }
 }
