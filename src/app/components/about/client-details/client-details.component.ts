@@ -18,8 +18,13 @@ import { MaterialModule } from '../../../shared/module/material.module';
 export class ClientDetailsComponent implements AfterViewInit {
   clients = CLIENT;
   ngAfterViewInit() {
-    const swiper = new Swiper('.mySwiper', {
+    const swiper = new Swiper('.mSwiper', {
       loop: true,
+      breakpoints: {
+        790: {
+          slidesPerView: 3,
+        },
+      },
       navigation: {
         nextEl: '.next',
         prevEl: '.prev',
