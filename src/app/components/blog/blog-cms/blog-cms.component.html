@@ -1,0 +1,60 @@
+<div class="flex flex-col p-4 gap-6 cms">
+  <a (click)="back()" class="btn-pink font-black flex flex-row gap-5 link">
+    <svg
+      width="24"
+      height="25"
+      viewBox="0 0 24 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 12.5H5"
+        stroke="#FF3C78"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M12 19.5L5 12.5L12 5.5"
+        stroke="#FF3C78"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      /></svg
+    >{{ 'blog' | uppercase }}</a
+  >
+  <div *ngIf="user">
+    <div class="flex flex-col justify-center gap-5">
+      <h2 class="text-2xl text-black">{{ user.header }}</h2>
+      <p class="text-sm">{{ user.text }}</p>
+      <img [src]="user.img" alt="" />
+    </div>
+    <div
+      *ngFor="let users of user.user"
+      class="single flex flex-col justify-center items-center text-center gap-5 mt-5 m-auto"
+    >
+      <img [src]="users.img" alt="" />
+      <h5>{{ users.name }}</h5>
+      <span>{{ users.title }}</span>
+      <p>{{ users.text }}</p>
+      <ul class="flex items-center justify-center gap-3">
+        <li
+          *ngFor="let socials of users.social"
+          class="flex flex-row justify-center"
+        >
+          <a class="icons" [href]="[socials.link]">
+            <img [src]="socials.icon" alt="" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-5 mt-5">
+      <span class="text-base">{{ user.data }}</span>
+      <h4 class="text-2xl">{{ user.body }}</h4>
+      <p class="text-sm">{{ user.bodyText }}</p>
+      <h4 class="text-2xl text-black">{{ user.body }}</h4>
+      <p class="text-sm">{{ user.storyText2 }}</p>
+    </div>
+  </div>
+  <app-blog></app-blog>
+</div>
