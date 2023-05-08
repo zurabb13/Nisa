@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedComponent } from '../components/shared.component';
 import { HomeComponent } from '../../components/home/home.component';
+import { PageNotFoundComponent } from '../components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
           import('../../components/blog/blog.module').then(
             (blog) => blog.BlogModule
           ),
+      },
+      {
+        path: '**',
+        component: PageNotFoundComponent,
       },
     ],
   },
