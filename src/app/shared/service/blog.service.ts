@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class BlogService {
-  private api = 'http://localhost:3000/blogs';
+  private api = 'https://nisa-json.onrender.com';
   constructor(private http: HttpClient) {}
 
   getBlog(): Observable<any> {
