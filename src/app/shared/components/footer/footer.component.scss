@@ -30,6 +30,18 @@ footer {
       display: flex;
       gap: 25px;
       margin-top: 26px;
+      li {
+        a {
+          img {
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover {
+            img {
+              scale: 1.5;
+            }
+          }
+        }
+      }
     }
   }
   .overview {

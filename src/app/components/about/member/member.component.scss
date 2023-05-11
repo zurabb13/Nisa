@@ -39,8 +39,13 @@
       .details {
         filter: grayscale(1) brightness(2);
         transition: all 0.3s ease-in-out;
+        img {
+          transition: all 0.3s ease-in-out;
+        }
         &:hover {
-          filter: grayscale(1) brightness(0);
+          img {
+            scale: 1.5;
+          }
         }
       }
       .moderator {
@@ -48,6 +53,10 @@
         top: 55%;
         left: 8%;
         border-radius: 16px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          scale: 1.1;
+        }
       }
     }
   }

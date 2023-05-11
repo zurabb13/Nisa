@@ -9,25 +9,25 @@ import Swiper from 'swiper';
 export class ReviewComponent implements AfterViewInit {
   review = [
     {
-      img: 'assets/img/overview-person.png',
+      img: 'assets/img/client/person-1.webp',
       person: 'Zura Baramia',
       prof: 'Angular Developer',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus venenatis mi aliquet cras interdum. Lectus cons ectetur fermentum lorem aliquam.',
     },
     {
-      img: 'assets/img/overview-person.png',
+      img: 'assets/img/client/person-2.webp',
       person: 'Zura Baramia',
       prof: 'Angular Developer',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus venenatis mi aliquet cras interdum. Lectus cons ectetur fermentum lorem aliquam.',
     },
     {
-      img: 'assets/img/overview-person.png',
+      img: 'assets/img/client/person-3.webp',
       person: 'Zura Baramia',
       prof: 'Angular Developer',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus venenatis mi aliquet cras interdum. Lectus cons ectetur fermentum lorem aliquam.',
     },
     {
-      img: 'assets/img/overview-person.png',
+      img: 'assets/img/client/person-1.webp',
       person: 'Zura Baramia',
       prof: 'Angular Developer',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus venenatis mi aliquet cras interdum. Lectus cons ectetur fermentum lorem aliquam.',

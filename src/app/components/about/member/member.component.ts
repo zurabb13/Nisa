@@ -16,42 +16,42 @@ export class MemberComponent {
 }
 const member = [
   {
-    img: 'assets/img/member/client-1.png',
+    img: 'assets/img/member/client-1.webp',
     name: 'Zura Baramia',
     about: 'Lorem ipsum dolor sit amet, consec -tetur adipiscing elit. ',
     color: 'cadetblue',
     position: 'CEO & FOUNDER',
   },
   {
-    img: 'assets/img/member/client-2.png',
+    img: 'assets/img/member/client-2.webp',
     name: 'Katie Smith',
     about: 'Lorem ipsum dolor sit amet, consec -tetur adipiscing elit. ',
     color: 'blue',
     position: 'CEO & FOUNDER',
   },
   {
-    img: 'assets/img/member/client-3.png',
+    img: 'assets/img/member/client-3.webp',
     name: 'Borkat Ali',
     about: 'Lorem ipsum dolor sit amet, consec -tetur adipiscing elit. ',
     color: 'green',
     position: 'CTO & Co- Founder',
   },
   {
-    img: 'assets/img/member/client-4.png',
+    img: 'assets/img/member/client-4.webp',
     name: 'Alex Mex',
     about: 'Lorem ipsum dolor sit amet, consec -tetur adipiscing elit. ',
     color: 'yellowgreen',
     position: 'CEO & FOUNDER',
   },
   {
-    img: 'assets/img/member/client-5.png',
+    img: 'assets/img/member/client-5.webp',
     name: 'Tahn Lane',
     about: 'Lorem ipsum dolor sit amet, consec -tetur adipiscing elit. ',
     color: 'teal',
     position: 'VP of Marketing',
   },
   {
-    img: 'assets/img/member/client-6.png',
+    img: 'assets/img/member/client-6.webp',
     name: 'Maruf Mia',
     about: 'Lorem ipsum dolor sit amet, consec -tetur adipiscing elit. ',
     color: 'purple',

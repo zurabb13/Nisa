@@ -21,13 +21,13 @@ export class MeetSectionComponent implements OnInit, AfterViewInit {
   ngOnInit() {}
 
   images = [
-    { img: 'assets/img/%20about/meet-1.png', alt: 'meet-person' },
-    { img: 'assets/img/%20about/meet-2.png', alt: 'meet-person' },
-    { img: 'assets/img/%20about/meet-3.png', alt: 'meet-person' },
-    { img: 'assets/img/%20about/meet-4.png', alt: 'meet-person' },
-    { img: 'assets/img/%20about/meet-5.png', alt: 'meet-person' },
-    { img: 'assets/img/%20about/meet-6.png', alt: 'meet-person' },
-    { img: 'assets/img/%20about/meet-7.png', alt: 'meet-person' },
+    { img: 'assets/img/%20about/meet-1.webp', alt: 'meet-person' },
+    { img: 'assets/img/%20about/meet-2.webp', alt: 'meet-person' },
+    { img: 'assets/img/%20about/meet-3.webp', alt: 'meet-person' },
+    { img: 'assets/img/%20about/meet-4.webp', alt: 'meet-person' },
+    { img: 'assets/img/%20about/meet-5.webp', alt: 'meet-person' },
+    { img: 'assets/img/%20about/meet-6.webp', alt: 'meet-person' },
+    { img: 'assets/img/%20about/meet-7.webp', alt: 'meet-person' },
   ];
   details = [
     { info: '98%', text: 'CCustomer satisfaction' },
