@@ -24,7 +24,7 @@ const social = [
     link: 'https://facebook.com/zurabb13',
   },
   {
-    img: 'assets/img/icon/instagram.svg',
+    img: 'assets/img/icon/google+.svg',
     link: 'https://instagram.com/zurabb13',
   },
   {
